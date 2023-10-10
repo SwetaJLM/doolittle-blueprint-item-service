@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    properties.hibernate:
+      type: trace 
+      show_sql: true
+      format_sql: true
+
+cache:
+  disable: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace

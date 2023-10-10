@@ -1,0 +1,29 @@
+spring:
+  jpa:
+    properties.hibernate:
+#      type: trace 
+      show_sql: false
+      format_sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: warn
+      springframework:
+        data:
+          auditing: warn
+        test: warn
+
+cache:
+  disable: true
+
+media:
+  s3.bucket: not-set
+
+  input:
+    bucket: not-set
+    pathassets:
+      sqs:
+        enabled: false
+        queueUri: not-set

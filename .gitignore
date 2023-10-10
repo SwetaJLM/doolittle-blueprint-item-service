@@ -1,0 +1,71 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Eclipse and mvn build stuff #
+.checkstyle
+.settings/*
+*/.settings/*
+target/*
+*/target/*
+*/test-output/*
+.classpath
+.project
+.jpage
+bin
+./bin/*
+kh.sublime-*
+.idea
+*.iml
+*.eml
+dependency-reduced-pom.xml
+intellify-service/dependency-reduced-pom.xml
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+logs/*
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# ElasticSearch generated files #
+#################################
+data/*
+
+# JavaDoc files
+intellisense-javadoc-1.0.6-SNAPSHOT
+doc
+
+#JENV
+.java-version

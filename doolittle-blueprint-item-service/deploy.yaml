@@ -1,0 +1,23 @@
+global:
+  team: doolittle
+  name: doolittle-contentlist-service
+  type: service
+
+deployment:
+  image:
+    cmd: java -javaagent:/opt/newrelic.jar org.springframework.boot.loader.JarLauncher
+
+  env:
+    instance:
+      - name: NEW_RELIC_APP_NAME
+        value: $(OTEL_SERVICE_NAME);CTK-$(ENV)
+
+  healthCheck:
+    initialDelaySeconds: 60
+
+    liveness:
+      path: /actuator/health/liveness
+
+    readiness:
+      path: /actuator/health/readiness
+

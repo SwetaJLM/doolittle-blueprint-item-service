@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: doolittle-blueprint-item-service
+
+  redis:
+    host: ${redis.host}
+    timeout: 5s
+
+server:
+  port: ${port:8230}
+  servlet:
+    contextPath: /blueprint-item-service/v1
