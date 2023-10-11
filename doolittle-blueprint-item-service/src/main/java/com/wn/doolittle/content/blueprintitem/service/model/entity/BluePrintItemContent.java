@@ -12,8 +12,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @EntityListeners({ AuditingEntityListener.class })
 public class BluePrintItemContent extends AggregatedContentEntity {
     private static final long serialVersionUID = 1L;
-
-    private String src; // BluePrintItem API - Add src field
+    private String src;
 
     public String getSrc() {
         return src;
