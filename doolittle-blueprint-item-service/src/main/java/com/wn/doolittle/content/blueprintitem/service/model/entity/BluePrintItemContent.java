@@ -4,13 +4,13 @@ import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.Table;
 
-import com.wn.doolittle.content.model.AggregatedContentEntity;
+import com.wn.doolittle.content.model.ContentEntity;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 @Entity
-@Table(name = "blueprintitemcontent")
+@Table(name = "content")
 @EntityListeners({ AuditingEntityListener.class })
-public class BluePrintItemContent extends AggregatedContentEntity {
+public class BluePrintItemContent extends ContentEntity {
     private static final long serialVersionUID = 1L;
     private String src;
 
