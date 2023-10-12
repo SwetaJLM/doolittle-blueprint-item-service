@@ -16,8 +16,9 @@ public class BluePrintItemContentRepositoryTest extends BaseJpaTest {
     private BluePrintItemContentRepository repository;
 
     @Test
-    public void testSaveContentComponents() {
+    public void testSaveBlueprint() {
         BluePrintItemContent itemContent = new BluePrintItemContent();
+        itemContent.setContentId("cid");
         itemContent.setSrc("./blueprintUrl");
 
         itemContent = repository.save(itemContent);

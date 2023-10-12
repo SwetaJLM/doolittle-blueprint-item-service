@@ -4,7 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.Table;
 
-import com.wn.doolittle.content.model.AggregatedContentEntity;
 import com.wn.doolittle.content.model.ContentEntity;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
