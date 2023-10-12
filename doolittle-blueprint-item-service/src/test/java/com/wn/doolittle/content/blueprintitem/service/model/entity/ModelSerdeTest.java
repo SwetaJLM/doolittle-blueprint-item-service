@@ -17,7 +17,7 @@ public class ModelSerdeTest {
     @Test
     public void testContestListContent() {
         BluePrintItemContent c = new BluePrintItemContent();
-        c.setSrc("./imageUrl");
+        c.setSrc("./blueprintUrl");
 
         ClientServerModelSerdeTests.testRoundtripSerialization(BluePrintItemContent.class,
                 com.wn.doolittle.content.blueprintitem.client.model.BluePrintItemContent.class,
