@@ -5,14 +5,13 @@ import com.wn.doolittle.content.client.AggregatedContentEntity;
 public class BluePrintItemContent extends AggregatedContentEntity {
     private static final long serialVersionUID = 1L;
 
-    private ImageProperties src; // BluePrintItem API - Add image field
+    private String src ;
 
-    public ImageProperties getSrc() {
+    public String getSrc() {
         return src;
     }
 
-    public void setSrc(ImageProperties src) {
+    public void setSrc(String src) {
         this.src = src;
     }
-
 }
