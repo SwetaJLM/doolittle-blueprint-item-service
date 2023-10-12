@@ -20,7 +20,7 @@ public class BluePrintItemContentClientConfig {
     @Bean
     public BluePrintItemContentClient bluePrintItemContentClient(ObjectMapper mapper,
             WebClientFactory webClientFactory) {
-        return new RestContentListContentClient(mapper,
+        return new RestBluePrintItemContentClient(mapper,
                 webClientFactory.createWebClient(BLUEPRINTITEM_SERVICE, BLUEPRINTITEM_API_BASE));
     }
 
